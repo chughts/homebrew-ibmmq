@@ -14,7 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 =end
 
-class MQContainerInspector < Formula
+class Mqcontainerinspector < Formula
 
   desc "A collection of tools for interacting with IBM® MQ queue managers running in containers."
   homepage "https://github.com/Apurv-1998/homebrew-ibmmq.git"
