@@ -25,7 +25,7 @@ class Mqcontainerinspector < Formula
   # sha256:
 
   # If we are not going for the release we can directly fetch the code from the head
-  head "ssh://git@github.ibm.com:mq-cloudpak/mq-container-inspector.git", branch: "main"
+  head "ssh://git@github.ibm.com/mq-cloudpak/mq-container-inspector.git", branch: "main"
 
   depends_on "go" => :build
 
