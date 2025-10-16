@@ -17,7 +17,7 @@ limitations under the License.
 class MQContainerInspector < Formula
 
   desc "A collection of tools for interacting with IBM® MQ queue managers running in containers."
-  homepage "https://github.com/ibm-messaging/homebrew-ibmmq"
+  homepage "https://github.com/Apurv-1998/homebrew-ibmmq.git"
 
   # TODO: Confirm -> we will not be creating the release for the mq-container-inspector, hence will not be having the tar-ball and the sha
   # If we are going for a release then we should include url and sha265
