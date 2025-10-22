@@ -72,8 +72,8 @@ install.
 NOTE: This release contains only ARM64 binaries.
 ```
 
-The current toolkit is a binary built only for the ARM64 architecture. If you do want
-the x86_64 MacOS then you will need to go back to the `9.4.3.0` universal binary.
+The current toolkit is a binary built only for the ARM64 architecture. 
+If you need to work with x86_64 MacOS then you will need to use the 9.4.3.0 binary.
 
 
 ## Delete Tap
