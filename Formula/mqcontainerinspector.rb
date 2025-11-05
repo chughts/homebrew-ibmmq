@@ -20,7 +20,6 @@ class Mqcontainerinspector < Formula
 
   homepage "https://github.com/ibm-messaging/homebrew-ibmmq.git"
 
-
   head "https://github.com/ibm-messaging/mq-container-inspector.git", branch: "main"
 
   depends_on "go" => :build
@@ -31,6 +30,16 @@ class Mqcontainerinspector < Formula
 
     system "go", "build", *std_go_args(output: bin/"mq-container-inspector", ldflags: ldflags), "."
 
+  end
+
+  def caveats
+    <<~EOS
+      The mq-container-inspector binary has been installed to:
+        #{HOMEBREW_PREFIX}/bin/mq-container-inspector
+
+      You can verify the installation by running:
+        mq-container-inspector --help
+    EOS
   end
 
   test do
