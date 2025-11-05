@@ -14,18 +14,14 @@ See the License for the specific language governing permissions and
 limitations under the License.
 =end
 
-class MQContainerInspector < Formula
+class Mqcontainerinspector < Formula
 
   desc "A collection of tools for interacting with IBM® MQ queue managers running in containers."
-  homepage "https://github.com/Apurv-1998/homebrew-ibmmq.git"
 
-  # TODO: Confirm -> we will not be creating the release for the mq-container-inspector, hence will not be having the tar-ball and the sha
-  # If we are going for a release then we should include url and sha265
-  # url:
-  # sha256:
+  homepage "https://github.com/ibm-messaging/homebrew-ibmmq.git"
 
-  # If we are not going for the release we can directly fetch the code from the head
-  head "git@github.ibm.com:mq-cloudpak/mq-container-inspector", branch: "apurv-mq-container-inspector-brew-formula"
+
+  head "https://github.com/ibm-messaging/mq-container-inspector.git", branch: "main"
 
   depends_on "go" => :build
 
