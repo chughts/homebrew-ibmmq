@@ -19,7 +19,7 @@ class Mqcontainerinspector < Formula
   desc "A collection of tools for interacting with IBM® MQ queue managers running in containers."
 
   homepage "https://github.com/ibm-messaging/homebrew-ibmmq.git"
-
+  url "https://github.com/ibm-messaging/mq-container-inspector/archive/refs/heads/main.tar.gz"
   head "https://github.com/ibm-messaging/mq-container-inspector.git", branch: "main"
 
   depends_on "go" => :build
