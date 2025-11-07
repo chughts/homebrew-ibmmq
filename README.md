@@ -82,3 +82,13 @@ To unregister this repository as a tap, run the command
 ```
 brew untap ibm-messaging/ibmmq
 ```
+
+## Formula for mqcontainerinspector
+Installs a MQ container inspector on MacOS
+See. https://github.com/ibm-messaging/mq-container-inspector
+
+### Install MQ container inspector:
+brew install ibm-messaging/ibmmq/mqcontainerinspector
+
+### Verify the Installation:
+mq-container-inspector version
