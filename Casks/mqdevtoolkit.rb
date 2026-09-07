@@ -19,7 +19,7 @@ cask "mqdevtoolkit" do
   version "10.0.0.0"
   sha256 "1e8e35dbb00f7ac61d7f7f76561de11d737b61d22627ea964ccf4195f3c7fa6a"
 
-  url "https://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/messaging/mqdev/mactoolkit/#{version}-IBM-MQ-DevToolkit-MacOS.pkg",
+  url "https://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/messaging/mqdev/mactoolkit/#{version}-IBM-MQ-DevToolkit-MacOS.pkg"
   name "mqdevtoolkit"
   desc "IBM MQ Advanced Toolkit for MacOS"
   homepage "https://github.ibm.com/ibm-messaging/homebrew-ibmmq"
