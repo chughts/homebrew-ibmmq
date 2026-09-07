@@ -34,15 +34,20 @@ cask "mqdevtoolkit" do
     license "https://ibm.biz/mqdevmacclient"
     path_environment_variable "/opt/mqm/bin"
 
+    bold      = ->(s) { "\e[1m#{s}\e[22m" }
+    underline = ->(s) { "\e[4m#{s}\e[24m" }
+    italic    = ->(s) { "\e[3m#{s}\e[23m" }
+
     <<~EOS
       Full license information is in /opt/mqm/licenses/
+      #{underline.call(bold.call("PLEASE READ"))}
       If you don't accept these license terms, uninstall by running:
-        brew uninstall ibm-messaging/ibmmq/mqdevtoolkit
+        #{italic.call("brew uninstall ibm-messaging/ibmmq/mqdevtoolkit")}
 
-      Post Install:
+      #{bold.call("Post Install")}
         Add /opt/mqm/bin and /opt/mqm/samp/bin to PATH by editing /etc/paths.
         Set the dynamic library path:
-          export DYLD_LIBRARY_PATH=/opt/mqm/lib64
+          #{italic.call("export DYLD_LIBRARY_PATH=/opt/mqm/lib64")}
     EOS
   end
 
