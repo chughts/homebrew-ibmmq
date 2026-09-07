@@ -46,8 +46,8 @@ cask "mqdevtoolkit" do
     EOS
   end
 
-uninstall_preflight_steps do
-  remove "/opt/mqm/gskit9/lib"
-end
+  uninstall_preflight_steps do
+    remove "/opt/mqm/gskit9/lib"
+  end
 
 end
