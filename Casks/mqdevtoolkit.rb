@@ -33,6 +33,16 @@ cask "mqdevtoolkit" do
   caveats do
     license "https://ibm.biz/mqdevmacclient"
     path_environment_variable "/opt/mqm/bin"
+    <<~EOS
+      Full license information is in /opt/mqm/licenses/
+      If you don't accept these license terms, uninstall by running:
+        brew uninstall ibm-messaging/ibmmq/mqdevtoolkit
+
+      Post Install:
+        Add /opt/mqm/bin and /opt/mqm/samp/bin to PATH by editing /etc/paths.
+        Set the dynamic library path:
+          export DYLD_LIBRARY_PATH=/opt/mqm/lib64
+    EOS
   end
 
   postflight do
