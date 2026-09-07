@@ -33,7 +33,7 @@ cask "mqdevtoolkit" do
   caveats do
     license "https://ibm.biz/mqdevmacclient"
     path_environment_variable "/opt/mqm/bin"
-    <<~EOS
+    puts <<~EOS
       Full license information is in /opt/mqm/licenses/
       If you don't accept these license terms, uninstall by running:
         brew uninstall ibm-messaging/ibmmq/mqdevtoolkit
