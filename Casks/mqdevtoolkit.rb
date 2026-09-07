@@ -24,6 +24,8 @@ cask "mqdevtoolkit" do
   desc "IBM MQ Advanced Toolkit for MacOS"
   homepage "https://github.ibm.com/ibm-messaging/homebrew-ibmmq"
 
+  depends_on arch: :arm64
+
   pkg "#{version}-IBM-MQ-DevToolkit-MacOS.pkg"
 
   uninstall pkgutil: "com.ibm.cloud.mqclient"
@@ -138,20 +140,12 @@ cask "mqdevtoolkit" do
       puts " "
     end
 
-    def checkOSArch
-      if "arm64" != `uname -m`.strip
-        puts
-        puts bold("NOTE: This release contains only ARM64 binaries.")
-        puts
-      end
-    end
 
     licenseLocation = "/opt/mqm/licenses/"
 
     show_license(licenseLocation)
     showUsage(licenseLocation)
     showPostSteps
-    checkOSArch
   end
 
   uninstall_preflight do
