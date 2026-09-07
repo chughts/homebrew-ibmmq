@@ -1,5 +1,5 @@
 =begin
-Copyright 2025 IBM Corp.
+Copyright 2025, 2026 IBM Corp.
 
 Licensed under the Apache License, Version 2.0 (the 'License');
 you may not use this file except in compliance with the License.
@@ -18,10 +18,10 @@ class Mqcontainerinspector < Formula
 
   desc "A collection of tools for interacting with IBM® MQ queue managers and MQ-Agent's running in containers."
 
-  version "v1.1.0"
+  version "v1.3.0"
   homepage "https://github.com/ibm-messaging/homebrew-ibmmq.git"
   url "https://github.com/ibm-messaging/mq-container-inspector/archive/refs/tags/#{version}.tar.gz"
-  sha256 "1c22fb3e49cd512c2441e2c9810b8b65c00e74d70e3df458c076c3e3752ab8b2"
+  sha256 "dcd1d35c3eb344a477698e247cccb3c26fb3f89c5367f1d8013bff9d6d490072"
   license "Apache-2.0"
   head "https://github.com/ibm-messaging/mq-container-inspector.git", branch: "main"
 
