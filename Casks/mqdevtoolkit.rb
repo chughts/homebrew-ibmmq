@@ -39,6 +39,7 @@ cask "mqdevtoolkit" do
     italic    = ->(s) { "\e[3m#{s}\e[23m" }
 
     <<~EOS
+    
       Full license information is in /opt/mqm/licenses/
       #{underline.call(bold.call("PLEASE READ"))}
       If you don't accept these license terms, uninstall by running:
