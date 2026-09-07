@@ -45,12 +45,8 @@ cask "mqdevtoolkit" do
     EOS
   end
 
-  uninstall_preflight do
-    def removeGskitSymlink
-      system "sudo", "unlink", "/opt/mqm/gskit9/lib" if File.symlink?("/opt/mqm/gskit9/lib")
-    end
-
-    removeGskitSymlink
+  uninstall_preflight_steps do
+    symlink "/opt/mqm/gskit9/lib", remove_on_uninstall: true
   end
 
 end
