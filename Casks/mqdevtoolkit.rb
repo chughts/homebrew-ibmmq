@@ -49,4 +49,8 @@ cask "mqdevtoolkit" do
     symlink "/opt/mqm/gskit9/lib", remove_on_uninstall: true
   end
 
+  postflight_steps do
+    symlink "/actual/path/to/gskit/lib", "/opt/mqm/gskit9/lib", remove_on_uninstall: true
+  end
+
 end
