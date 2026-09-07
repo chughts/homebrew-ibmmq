@@ -45,12 +45,8 @@ cask "mqdevtoolkit" do
     EOS
   end
 
-  uninstall_preflight_steps do
-    symlink "/opt/mqm/gskit9/lib", remove_on_uninstall: true
-  end
-
-  postflight_steps do
-    symlink "/actual/path/to/gskit/lib", "/opt/mqm/gskit9/lib", remove_on_uninstall: true
-  end
+uninstall_preflight_steps do
+  remove "/opt/mqm/gskit9/lib"
+end
 
 end
